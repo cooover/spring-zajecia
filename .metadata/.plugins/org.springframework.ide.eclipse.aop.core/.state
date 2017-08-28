@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="CwiczenieS1"/>
+<aop-project name="D-MVC0-War"/>
+<aop-project name="D-MVC2-JAR"/>
+<aop-project name="D-MVC1"/>
+</aop-reference-model>

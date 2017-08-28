@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.thymeleaf.org"> 
+<body>
+	<h1 th:text="${p.title.toUpperCase()}"></h1>
+	<p th:text="${c.content}"> </p>
+	<p th:text="${c.email"></p>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<body>
+<h1> My contact Form </h1>
+<a href="/"> About </a>
+<p></p>
+<a href="/blog"> Blog </a>
+<p></p>
+<a href="#"> Contact </a>
+<p> ===========================</p>
+<form action="/success" method="get">
+	<p>Insert name</p>
+	<input type="text" name="first"/> <br/>
+	<p>Insert last</p>
+	<input type="text" name="last"/> <br/>
+	<p>Insert email</p>
+	<input type="text" name="email"/> <br/>
+	<input type="submit" value="send"/>
+</form>
+</body>
+</html>

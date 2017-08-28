@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.thymeleaf.org"> 
+<body>
+	<h1>Thank you <span th:text="${c.first.toUpperCase()}">first name</span> for your message!</h1>
+	<p> Your last name: <span th:text="${c.last}">last name</span> </p>
+	<p> Your e-mail adress: <span th:text="${c.email}">email </span></p>
+</body>
+
+</html>

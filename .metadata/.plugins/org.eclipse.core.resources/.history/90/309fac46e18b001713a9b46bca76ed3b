@@ -1,0 +1,11 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h1> My contact Form </h1>
+<a href="/"> About </a>
+<p></p>
+<a href="/blog"> Blog </a>
+<p></p>
+<a href="/contact"> Contact </a>
+</body>
+</html>

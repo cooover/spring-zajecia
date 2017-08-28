@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.thymeleaf.org"> 
+<body>
+	<h1 th:text="${p.title.toUpperCase()}"></h1>
+	<p th:text="${p.content}"> </p>
+	<p th:text="${p.sign}"></p>
+</body>
+
+</html>

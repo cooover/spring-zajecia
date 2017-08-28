@@ -1,0 +1,22 @@
+package pl.reaktor.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class KontaktController {
+	@RequestMapping("/kontakt")
+	public String kontakt(){
+		return "kontakt";
+		
+	}
+	@RequestMapping("/blog")
+	public String blog(){
+		return "blog";
+//	@RequestMapping("/oMnie")
+//	public String oMnie(){
+//		return "oMnie";
+//	}
+
+
+}
