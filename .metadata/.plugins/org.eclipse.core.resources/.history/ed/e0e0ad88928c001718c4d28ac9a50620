@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<form th:action="@{/result}" method="post">
+		<p>Login</p>
+		<input type="text" th:field="${reg.login}"/> 
+		<p>Password</p>
+		<input type="password" th:field="${reg.pass}"/> 
+		<p>Email</p>
+		<input type="email" th:field="${reg.email}"/> 
+		<p>Date of birth</p>
+		<input type="date" th:field="${reg.date}"/> 
+		<p>Programming languages</p>
+		<p><input type="checkbox" th:field="${reg.cb1}"/> Java</p> 
+		<p><input type="checkbox" th:field="${reg.cb2}"/> Python</p>
+		<p><input type="checkbox" th:field="${reg.cb3}"/> Other</p> 
+		<p>English level</p>
+		<span><input type="radio" th:field="${reg.radio}" name="radio" value="Advanded"/> Advanced</span> <br/>
+		<span><input type="radio" th:field="${reg.radio}" name="radio" value="Intermediate"/> Intermediate</span> <br/>
+		<span><input type="radio" th:field="${reg.radio}" name="radio" value="Basic"/> Basic </span> 
+		<p><input type="submit" value="send"/></p>
+	</form>
+</body>
+</html>

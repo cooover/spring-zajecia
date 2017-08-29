@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.thymeleaf.org"> 
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<script type = "text/javascript"></script>
+</head>
+<body>
+<h1> Hello in my Blog </h1>
+<a href="/"> About </a>
+<p></p>
+<a href="javascript:alert('już jesteś w zakładce blog');"> Blog </a>
+<p></p>
+<a href="/contact"> Contact </a>
+
+<h2> Dodaj post </h2>
+<form th:action="@{/add}" method="post">
+	<p>Tytuł</p>
+	<input type="text" th:field="${post.title}"/> <br/>
+	<p>Zawartość</p>
+	<textarea th:field="${post.content}"></textarea> 
+	<p>podpis</p>
+	<input type="text" th:field="${post.sign}"/> <br/>
+	<input type="submit" value="send"/>
+</form>
+</body>
+</html>

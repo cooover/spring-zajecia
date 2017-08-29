@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org"> 
+<body>
+	<h1>Thank you <span th:text="${reg.login.toUpperCase()}+${reg.pass}"></span> for your message!</h1>
+	<p> Your password: <span th:text="${reg.pass}"></span> </p>
+	<p> Your e-mail adress: <span th:text="${reg.email}"></span></p>
+	<p> Your date of birth: <span th:text="${reg.date}"></span></p>
+	<p th:if="${reg.cb1 || reg.cb2 || reg.cb3}" th:text="Programming+' '+languages+' '+you+' '+know"></p>
+	<p th:if="${reg.cb1}" th:text="Java"></p>
+	<p th:if="${reg.cb2}" th:text="Python"></p>
+	<p th:if="${reg.cb3}" th:text="Other"></p>
+	<p th:if="${reg.radio}" th:text="English+' '+level+':'"></p>
+	<span th:text="${reg.radio}"></span>
+</body>
+
+</html>

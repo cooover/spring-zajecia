@@ -1,0 +1,5 @@
+package pl.reaktor.controller;
+
+public class MainController {
+
+}
