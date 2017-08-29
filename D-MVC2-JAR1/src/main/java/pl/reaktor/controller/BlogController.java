@@ -13,17 +13,22 @@ import pl.reaktor.model.Posts;
 
 @Controller
 public class BlogController {
+	
 	@RequestMapping("/")
 	public String about(){
 		return "about";
 	}
-	
 	@RequestMapping("/blog")
 	public String blog(Model model){
 		model.addAttribute("post", new Posts());
 		return "blog";
 	}
 	
+	@PostMapping("/add")
+	public String add(@ModelAttribute Posts post, Model model){
+		model.addAttribute("post", post);
+		return "add";
+	}
 	@RequestMapping("/contact")
 	public String contact(Model model){
 		model.addAttribute("c", new Contact());
@@ -34,9 +39,5 @@ public class BlogController {
 		model.addAttribute("c", c);
 		return "success";
 	}
-	@PostMapping("/add")
-	public String add(@ModelAttribute Posts post, Model model){
-		model.addAttribute("post", post);
-		return "add";
-	}
+	
 }

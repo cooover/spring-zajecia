@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<p> Dane Twojego kredytu:</p>
+	<p> Kwota do sp³aty: <span th:text="${credit.k0*1.1}"></span></p>
+	<p> Kwota raty: <span th:text="${credit.k0*1.1/credit.n}"></span></p>
+	<p> Oprocentowanie wynosi 10%</p>
+</body>
+</html>

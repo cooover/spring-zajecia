@@ -1,0 +1,42 @@
+package pl.reaktor.model;
+
+public class Credit {
+
+	private double k0;
+	private int n;
+	private double r;
+	private double rata;
+	private double k;
+	
+	public double getK0() {
+		return k0;
+	}
+	public void setK0(double k0) {
+		this.k0 = k0;
+	}
+	public int getN() {
+		return n;
+	}
+	public void setN(int n) {
+		this.n = n;
+	}
+	public double getR() {
+		return r;
+	}
+	public void setR(double r) {
+		this.r = r;
+	}
+	public double getRata() {
+		return rata;
+	}
+	public void setRata(double rata) {
+		this.rata = rata;
+	}
+	public double getK() {
+		return k;
+	}
+	public void setK(double k) {
+		this.k = k;
+	}	
+	
+}

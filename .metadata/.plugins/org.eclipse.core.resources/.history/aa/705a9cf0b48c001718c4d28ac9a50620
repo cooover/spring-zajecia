@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<p> Dane Twojego kredytu:</p>
+	<p> Kwota do splaty: <span th:text="${credit.k0}"></span></p>
+</body>
+</html>

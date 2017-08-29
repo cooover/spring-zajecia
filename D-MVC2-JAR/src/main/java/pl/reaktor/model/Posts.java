@@ -1,10 +1,11 @@
 package pl.reaktor.model;
 
 public class Posts {
-
+	
 	private String title;
 	private String content;
 	private String sign;
+	
 	public String getTitle() {
 		return title;
 	}
@@ -21,13 +22,6 @@ public class Posts {
 		return sign;
 	}
 	public void setSign(String sign) {
-		this.sign = sign;
-	}
-	public Posts(){}
-	public Posts(String title, String content, String sign) {
-		super();
-		this.title = title;
-		this.content = content;
 		this.sign = sign;
 	}
 	

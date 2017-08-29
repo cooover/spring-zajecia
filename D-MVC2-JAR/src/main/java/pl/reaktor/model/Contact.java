@@ -23,7 +23,7 @@ public class Contact {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Contact() {}
+	public Contact(){}
 	public Contact(String first, String last, String email) {
 		super();
 		this.first = first;

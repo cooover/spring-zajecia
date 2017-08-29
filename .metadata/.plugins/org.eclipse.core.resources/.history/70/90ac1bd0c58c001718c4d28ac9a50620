@@ -1,0 +1,38 @@
+package pl.reaktor;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import pl.reaktor.model.Car;
+import pl.reaktor.repository.CarRepo;
+
+@SpringBootApplication
+public class DMvc4DataApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext ctx = SpringApplication.run(DMvc4DataApplication.class, args);
+		
+		// utworzenie tabelki zawierajacej samochody
+		List<Car> cars = new ArrayList<>();
+		cars.add(new Car("A6","Audi",200000.0));
+		cars.add(new Car("Auris","Toyota",120000.0));
+		cars.add(new Car("Panda","Fiat",30000.0));
+	
+		CarRepo cr = ctx.getBean(CarRepo.class);
+		// zapis do bazy danych 
+		cars.forEach(cr::save);
+		
+		Car selectedCar = cr.findOne(1L);
+		cr.delete(selectedCar);
+		
+		cr.findAll().forEach(System.out::println);
+		
+		ctx.close();
+				
+				
+	}
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<form th:action="@{/result}" method="post" th:object="${credit}">
+		<p>Podaj kwotê kredytu:</p>
+		<input type="text" th:field="*{k0.toString()}"/> 
+		<p>Ile miesiêcy chcesz sp³acaæ kredyt?:</p>
+		<p><input type="submit" value="send"/></p>
+	</form>
+</body>
+</html>

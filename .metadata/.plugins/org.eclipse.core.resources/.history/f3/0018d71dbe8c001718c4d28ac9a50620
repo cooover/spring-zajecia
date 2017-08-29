@@ -1,0 +1,25 @@
+package pl.reaktor.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import pl.reaktor.model.Car;
+
+
+
+@Controller
+public class DataController {
+
+	@RequestMapping("/")
+	public String home(){
+		// utworzenie tabelki zawierajacej samochody
+		List<Car> cars = new ArrayList<>();
+		
+		
+		
+		return "home";
+	}
+}

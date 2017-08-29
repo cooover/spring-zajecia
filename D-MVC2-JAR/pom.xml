@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>D-MVC2-JAR</name>
-	<description>My first JAR WebApp</description>
+	<description>My frist JAR WebApp</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

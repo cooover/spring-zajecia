@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<h3> Dane Twojego kredytu:</h3>
+	<p> Kwota do splaty: <span th:text="${credit.k0*(1+credit.r)}"></span></p>
+	<p> Kwota raty: <span th:text="${credit.k0*(1+credit.r)/credit.n}"></span></p>
+	<p> Oprocentowanie wynosi: <span th:text="${credit.r*100}">%</span></p>
+</body>
+</html>

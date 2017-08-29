@@ -1,9 +1,10 @@
-<html xmlns:th="http://www.thymeleaf.org"> 
-<body>
-<h1>Posty</h1>
-	<h2 th:text="${post.title.toUpperCase()}"></h2>
-	<p th:text="${post.content}"> </p>
-	<p th:text="${post.sign}"></p>
-</body>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 
+<body>
+<h1> Posty </h1>
+<h2 th:text="${post.title.toUpperCase()}"> first name </h2>
+<h4 th:text="${post.content}"> last name </h4>
+<h3 th:text="${post.sign}"> email </h3>
+</body>
 </html>
