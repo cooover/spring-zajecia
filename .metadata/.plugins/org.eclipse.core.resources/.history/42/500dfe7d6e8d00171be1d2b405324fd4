@@ -1,0 +1,5 @@
+package pl.reaktor.repository;
+
+public interface RegisterRepo {
+
+}
