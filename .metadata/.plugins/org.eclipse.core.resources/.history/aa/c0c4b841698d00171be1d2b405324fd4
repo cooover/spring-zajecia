@@ -1,0 +1,11 @@
+package pl.reaktor.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Register {
+	
+	private long id;
+	private String login;
+	private String passwd;
+}

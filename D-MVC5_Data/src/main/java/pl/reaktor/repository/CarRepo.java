@@ -14,4 +14,18 @@ public interface CarRepo extends JpaRepository<Car,Long>{
 	List<Car> findByPrice(Double price);
 	List<Car> findByName(String name);
 	List<Car> findByBrandAndPrice(String brand, Double price);
+	List<Car> findFirstByBrand(String brand);
+	List<Car> findFirst3ByBrand(String brand);
+	List<Car> findAllByBrandOrBrand(String brand1, String brand2);
+	List<Car> findAllByNameStartingWith(String name);
+	List<Car> findAllByNameLike(String name);
+	List<Car> findAllByNameContaining(String pattern);
+	List<Car> findAllByNameEndingWith(String pattern);
+	List<Car> findAllByNameStartingWithAndNameEndingWith(String pattern1, String pattern2);
+	List<Car> findAllByNameContainingAndNameStartingWith(String pattern1, String pattern2);
+	List<Car> findAllByBrandAndPriceLessThan(String brand, Double price);
+	List<Car> findAllByBrandLikeAndPriceBetween(String pattern, Double low, Double high);
+	List<Car> findAllByBrandOrderByNameAsc(String brand);
+	List<Car> findAllByPriceNotNullOrderByPriceDesc();
+	List<Car> findAllByOrderByPriceDesc();
 }

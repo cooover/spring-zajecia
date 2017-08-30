@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;D-MVC2-JAR/src/main/resources/templates/saveRegister&apos; to &apos;saveRegister.html&apos;" description="Rename resource &apos;saveRegister&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/saveRegister" name="saveRegister.html" stamp="1504087119878" updateReferences="true"/>
+</session>

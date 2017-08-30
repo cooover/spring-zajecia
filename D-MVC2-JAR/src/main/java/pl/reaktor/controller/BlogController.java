@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import pl.reaktor.model.Contact;
 import pl.reaktor.model.Posts;
+import pl.reaktor.model.Register;
 
 @Controller
 public class BlogController {
@@ -37,5 +38,14 @@ public class BlogController {
 		model.addAttribute("c",c);	
 		return "success";
 	}
-	
+	@RequestMapping("/registerForm")
+	public String registerForm(Model model){
+		model.addAttribute("reg", new Register());
+		return "registerForm";
+	}
+	@PostMapping("/saveRegister")
+	public String saveRegister(@ModelAttribute Register reg, Model model){
+		model.addAttribute("reg",reg);
+		return "saveRegister";
+	} 
 }
