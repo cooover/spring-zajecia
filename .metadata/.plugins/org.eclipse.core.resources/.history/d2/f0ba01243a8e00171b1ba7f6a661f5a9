@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<body>
+		<p> Secured </p>
+		<a href="/supersecured"> go to supersecured</a>
+		<form th:action="@{/}">
+			<input type="submit" value="logout"/>		
+		</form>
+	</body>
+</html>

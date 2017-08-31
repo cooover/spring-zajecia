@@ -1,0 +1,5 @@
+pl.rektor.model.Person.firstName.NotEmpty = to pole nie może być puste
+pl.rektor.model.Person.lasttName.NotEmpty = to pole nie może być puste
+pl.rektor.model.Person.email.NotEmpty = to pole nie może być puste
+pl.rektor.model.Person.email.Email= błędny adres email
+pl.rektor.model.Person.age.Min = jesteś za młody (minimalny wiek to {value})

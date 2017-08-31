@@ -3,7 +3,7 @@
 <head>
 <title>Basic 79</title>
 <meta charset="iso-8859-1" />
-<link rel="stylesheet" href="layout.css" type="text/css" />
+<link rel="stylesheet" href="/css/layout.css" type="text/css" />
 </head>
 <body>
 <div class="wrapper row1">
@@ -44,7 +44,9 @@
 		<div th:if="${all.isEmpty()}">
 			<h3> There is no post yet! </h3>
 		</div>
-				
+		<form th:action="@{/logout}" method="post">
+        	<input type="submit" value="logout" />
+        </form>		
       </article>
     </section>
     <!-- / content body -->

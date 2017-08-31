@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<body>
+		<p> Yeah! You are in supersecured area </p>
+		<form th:action="@{/}">
+			<input type="submit" value="logout"/>		
+		</form>
+	</body>
+</html>

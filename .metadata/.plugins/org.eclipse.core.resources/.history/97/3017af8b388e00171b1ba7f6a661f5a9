@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<body>
+		<form action="/processLogin" th:action="/processLogin" method="post">
+			<input type="text" name="username" placeholder="input name"/>
+			<input type="password" name="password" placeholder="input password"/>
+			<input type="submit" value="login"/>
+		</form>
+	</body>
+</html>

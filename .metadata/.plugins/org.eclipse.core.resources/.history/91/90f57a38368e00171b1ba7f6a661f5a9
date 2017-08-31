@@ -1,0 +1,21 @@
+package pl.reaktor.security;
+
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestBuilders.formLogin;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+@Configuration
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+	@Override
+	protected void configure(HttpSecurity http) throws Exception{
+		//nieuwierzytelnione dla ponizszych URL
+		http.authorizeRequests().antMatchers("/").permitAll()
+		// uwierzytelnianie dla kazdego innego adresu URL
+		.anyRequest().authenticated()
+		//korzystamy z dostepnego formularza logowania
+		.and().formLogin().loginPage("/logowanie").permitAll();
+	}
+}

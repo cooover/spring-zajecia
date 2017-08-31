@@ -7,14 +7,14 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 public class Person {
 
-	@NotEmpty
+	@NotEmpty(message = "{pl.reaktor.model.Person.firstName.NotEmpty}")
 	private String firstName;
-	@NotEmpty
+	@NotEmpty(message = "{pl.reaktor.model.Person.lasttName.NotEmpty}")
 	private String lastName;
-	@Email
-	@NotEmpty
+	@Email(message = "{pl.reaktor.model.Person.email.Email}")
+	@NotEmpty(message = "{pl.reaktor.model.Person.email.NotEmpty}")
 	private String email;
-	@Min(value=18)
+	@Min(value=18, message = "{pl.reaktor.model.Person.age.Min}")
 	private int age;
 	
 	public String getFirstName() {

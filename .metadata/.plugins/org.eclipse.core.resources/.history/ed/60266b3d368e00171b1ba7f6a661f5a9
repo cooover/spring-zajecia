@@ -1,0 +1,9 @@
+<html>
+	<body>
+		<form action="/processLogin" method="get">
+			<input type="text" name="name" placeholder="input name"/>
+			<input type="password" name="password" placeholder="input password"/>
+			<input type="submit" value="login"/>
+		</form>
+	</body>
+</html>

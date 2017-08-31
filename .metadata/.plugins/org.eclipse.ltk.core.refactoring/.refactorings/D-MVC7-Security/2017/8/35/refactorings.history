@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;D-MVC7-Security/src/main/resources/templates/logowanie.html&apos; to &apos;loginForm.html&apos;" description="Rename resource &apos;logowanie.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/logowanie.html" name="loginForm.html" stamp="1504175128872" updateReferences="true"/>
+</session>

@@ -1,0 +1,5 @@
+package pl.reaktor.security;
+
+public class SecurityConfig {
+
+}

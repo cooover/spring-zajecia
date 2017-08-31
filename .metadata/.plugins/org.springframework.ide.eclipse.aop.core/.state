@@ -5,8 +5,9 @@
 <aop-project name="CwiczenieS8"/>
 <aop-project name="D-MVC5_Data"/>
 <aop-project name="D-MVC2-JAR1"/>
+<aop-project name="D-MVC7-Security"/>
 <aop-project name="D-MVC0-War"/>
-<aop-project name="D-MVC2-JAR"/>
 <aop-project name="D-MVC6-Validation"/>
+<aop-project name="D-MVC2-JAR"/>
 <aop-project name="D-MVC1"/>
 </aop-reference-model>
